@@ -3,7 +3,7 @@
 "When there are little demons running around with .bat crypters, you get an exorcism."
 
 ![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)
-![Platform](https://img.shields.io/badge/platform-Windows-lightgrey.svg)
+![Platform](https://img.shields.io/badge/platform-Windows-lightgreen.svg)
 ![Language](https://img.shields.io/badge/language-C%2B%2B%2FPython-orange.svg)
 
 **Exorcism** is the first open-source runtime Windows batch deobfuscator that uses DLL injection and function hooking to monitor and log batch file commands as they are executed by `cmd.exe`.
