@@ -2,6 +2,8 @@
 
 "When there are little demons running around with .bat crypters, you get an exorcism."
 
+If you haven't installed detours, make sure you run "nmake" in the detours src directory.
+
 ![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows-lightgreen.svg)
 ![Language](https://img.shields.io/badge/language-C%2B%2B%2FPython-orange.svg)
