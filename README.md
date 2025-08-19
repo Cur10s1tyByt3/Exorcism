@@ -92,15 +92,24 @@ pip install -r requirements.txt
 
 4. **Monitor the output** in real-time as commands are logged
 
+
+### Example Input
+```batch
+echo Hello World
+set VAR=secret_value
+if exist file.txt del file.txt
+cls
+```
 ### Example Output
 
 The tool logs commands in JSON format to `cmd_hook.json`:
 
 ```json
 {"event_type":"hook_status","message":"FindFixAndRun hook initialized successfully"}
-{"event_type":"command_execution","command":"echo Hello World","arguments":"Hello World","command_type":1}
-{"event_type":"command_execution","command":"set VAR=secret_value","arguments":"VAR=secret_value","command_type":2}
-{"event_type":"command_execution","command":"if exist file.txt del file.txt","arguments":"exist file.txt del file.txt","command_type":3}
+{"arguments":" Hello World","command":"echo","command_type":0,"event_type":"command_execution"}
+{"arguments":" VAR=secret_value","command":"set","command_type":0,"event_type":"command_execution"}
+{"command":"cls","command_type":0,"event_type":"command_execution"}
+{"event_type":"hook_status","message":"FindFixAndRun hook being removed"}
 ```
 
 ## 🔧 Configuration
